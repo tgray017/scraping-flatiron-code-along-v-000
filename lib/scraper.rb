@@ -23,7 +23,7 @@ class Scraper
     
     def get_courses
       binding.pry
-      get_page.css('#course-grid .posts-holder')
+      get_page.css('#course-grid .posts-holder ')
     end
     
     def make_courses
