@@ -32,7 +32,6 @@ class Scraper
         course.schedule = course_object.css('.date').text
         course.description = course_object.css('p').text
       end
-      binding.pry
     end
     
 end
