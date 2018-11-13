@@ -33,10 +33,6 @@ class Scraper
         course.description = course_object.css('p').text
       end
     end
-  
 end
-
-scraper = Scraper.new
-scraper.print_courses
 
 
