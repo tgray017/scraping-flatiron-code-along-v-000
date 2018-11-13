@@ -22,7 +22,7 @@ class Scraper
     end
     
     def get_courses
-      get_page.css('#course-grid .posts-holder .post')
+      self.get_page.css('#course-grid .posts-holder .post')
     end
     
     def make_courses
