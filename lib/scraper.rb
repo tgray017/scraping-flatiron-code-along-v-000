@@ -27,7 +27,6 @@ class Scraper
     end
     
     def make_courses
-      courses = get_courses.css('article')
       get_courses.each do |courses_array|
         courses_array.each do |course_object| 
           binding.pry
