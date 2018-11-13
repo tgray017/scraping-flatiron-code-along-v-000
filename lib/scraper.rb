@@ -27,15 +27,12 @@ class Scraper
     end
     
     def make_courses
-      get_courses.each do |courses_array|
-        courses_array.each do |course_object| 
-          binding.pry
-          course = Course.new
-          course.title = course_object.css('h2').text
-          course.schedule = course_object.css('em').text
-          course.description = course_object.css('p').text
-          #binding.pry
-        end
+      get_courses.each do |course_object| 
+        binding.pry
+        course = Course.new
+        course.title = course_object.css('h2').text
+        course.schedule = course_object.css('em').text
+        course.description = course_object.css('p').text
       end
     end
   
